@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* 서로 연결시키는 링크 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100..900&display=swap');
+
+서체 나눔고딕 .nanum-gothic-regular {
+    font-family: "Nanum Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 서체  */
+/* 나눔 명조 */
+.nanum-myeongjo-regular {
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    /* 400, 700, 700 */
+
+    font-style: normal;
+}
+
+
+/* 폰트 연결 */
+@font-face {
+    font-family: '116watermelon' ;
+    src: url(../font/116watermelon.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chilgok_kyb' ;
+    src: url(../font/Chilgok_kyb.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FENGSHANBEICUANTI' ;
+    src: url(../font/FENGSHANBEICUANTI.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'tanker' ;
+    src: url(../font/Tanker-Regular.woff2) format('woff2');
+    font-display: swap;
+}
+
+/*  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: "Noto Sans KR", sans-serif; */
+    font-family: 'Chilgok_kyb';
+    font-weight: 400;
+    /* 400, 700, 700 */
+    font-size: 16px;
+    color: #222;
+}
+
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+img,
+fieldset {
+    border: none;
+    vertical-align: middle;
+}
+
+input, textarea{
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    vertical-align: middle;
+}
+/* textarea: 여러 줄 읽을 수 있는 값 -> 2줄 이상 */
+
+#wrap{
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+.inner {
+    width: 1500px;
+    margin: 0 auto;
+}

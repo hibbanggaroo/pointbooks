@@ -1,0 +1,546 @@
+@charset "utf-8";
+
+header {
+    text-align: center;
+    background-color: #f6f1e8;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    background-color: #f6f1e8;
+    padding-top: 43px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 a img {
+    display: block;
+}
+
+.banner01 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.menu {
+    display: flex;
+    gap: 47px;
+    width: 0 auto;
+}
+
+.menu {
+    list-style-type: none;
+    font: 20px 'tanker';
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+    /* margin으로 메뉴 간격 조절 */
+    font-size: 15px;
+}
+
+.banner01 a {
+    color: #3d0202;
+    text-decoration: none;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu ul li {
+    display: inline;
+    margin-right: 20px;
+    /* margin으로 메뉴 간격 조절 */
+    font-size: 15px;
+}
+
+.quick {
+    position: absolute;
+    right: 0;
+}
+
+.join {
+    padding-right: 5px;
+}
+
+.quick a {
+    font: 15px 'FENGSHANBEICUANTI';
+}
+
+.menu-btn {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    width: 80%;
+    height: 2px;
+    border-radius: 5px;
+    background: #3d0202;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.menu-btn span:nth-child(1) {
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.menu-btn span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-btn span:nth-child(3) {
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.x-btn {
+    width: 10%;
+    height: 45px;
+    border-radius: 5px;
+    /* background: #3d0202; */
+    position: absolute;
+
+    right: 10px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.x-btn span {
+    background: #3d0202;
+    width: 30px;
+    height: 5px;
+    position: absolute;
+}
+
+.x-btn span:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.x-btn span:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ---------------------------------------- */
+
+.menu-hover {
+    position: fixed;
+    width: 336px;
+    height: 100vh;
+    background: #ede6d4;
+    top: 0;
+    left: -336px;
+    font-family: 'tanker';
+    color: #3d0202;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    transition: 0.5s;
+}
+
+.menu-hover.on {
+    left: 0;
+}
+
+/* .menu-hover:hover {
+    width: 336px;
+    height: 100vh;
+} */
+
+/*  */
+.menu-hover-title {
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.menu-hover-pointbooks {
+    font-size: 20px;
+}
+
+.menu-hover-pointbooks-title {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/*  */
+.down-btn1 {
+    width: 10%;
+    height: 45px;
+    border-radius: 5px;
+    /* background: #3d0202; */
+    position: absolute;
+
+    right: 65px;
+    top: 160px;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+.down-btn1 span {
+    background: #3d0202;
+    width: 15px;
+    height: 5px;
+    position: absolute;
+}
+
+.down-btn1 span:nth-child(1) {
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -70%) rotate(45deg);
+}
+
+.down-btn1 span:nth-child(2) {
+    top: 50%;
+    right: 38%;
+    transform: translate(50%, -70%) rotate(-45deg);
+}
+
+.down-btn1.on {
+    transform: rotate(180deg);
+}
+
+/*  */
+
+.menu-hover-pointbooks-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-hover-story {
+    font-size: 20px;
+}
+
+.menu-hover-story div {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-hover-story-title {
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+/*  */
+.down-btn2 {
+    display: inline-block;
+    width: 10%;
+    height: 45px;
+    border-radius: 5px;
+    /* background: #3d0202; */
+    /* position: absolute;
+
+    right: 95px;
+    top: 225px; */
+    cursor: pointer;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: -5px;
+}
+
+.down-btn2 span {
+    background: #3d0202;
+    width: 15px;
+    height: 5px;
+    position: absolute;
+}
+
+.down-btn2 span:nth-child(1) {
+    top: 50%;
+    left: 38%;
+    transform: translate(-50%, -70%) rotate(45deg);
+}
+
+.down-btn2 span:nth-child(2) {
+    top: 50%;
+    right: 38%;
+    transform: translate(50%, -70%) rotate(-45deg);
+}
+
+.down-btn2.on {
+    transform: rotate(180deg);
+}
+
+/*  */
+
+.menu-hover-shop-books-title {
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.down-btn3 {
+    width: 15px;
+    height: 15px;
+    /* background: #3d0202; */
+    cursor: pointer;
+
+    border-right: 6px solid #3d0202;
+    border-bottom: 6px solid #3d0202;
+    position: absolute;
+    top: 50%;
+    transform: translate(10px, -100%) rotate(45deg);
+}
+
+.down-btn3.on {
+    transform: translate(10px, -50%) rotate(225deg);
+}
+
+
+.menu-hover-shop-books {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.menu-hover-shop-books-books {
+    cursor: pointer;
+}
+
+
+/*  */
+.down-btn3-1 {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    /* background: #3d0202; */
+    /* position: absolute;
+
+    right: 95px;
+    top: 225px; */
+    cursor: pointer;
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: -5px; */
+}
+
+.down-btn3-1 span {
+    background: #3d0202;
+    width: 10px;
+    height: 4px;
+    position: absolute;
+}
+
+.down-btn3-1 span:nth-child(1) {
+    top: 50%;
+    left: 38%;
+    transform: translate(-36%, -70%) rotate(45deg);
+}
+
+.down-btn3-1 span:nth-child(2) {
+    top: 50%;
+    right: 38%;
+    transform: translate(36%, -70%) rotate(-45deg);
+}
+
+.down-btn3-1.on {
+    transform: rotate(180deg);
+}
+
+/*  */
+
+.menu-hover-shop-books-books- {
+    font-size: 16px
+}
+
+/*  */
+.menu-hover-shop-books,
+.menu-hover-shop-etc {
+    display: none;
+}
+
+.menu-hover-shop-books-booksmenu,
+.menu-hover-shop-menu {
+    display: none;
+}
+
+/*  */
+
+.menu-hover-shop-etc-title {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.down-btn3-2 {
+    display: inline-block;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    /* background: #3d0202; */
+    /* position: absolute;
+
+    right: 95px;
+    top: 225px; */
+    cursor: pointer;
+    /* border: 1px solid red; */
+    position: absolute;
+    /* top: -5px; */
+}
+
+.down-btn3-2 span {
+    background: #3d0202;
+    width: 9px;
+    height: 4px;
+    position: absolute;
+}
+
+.down-btn3-2 span:nth-child(1) {
+    top: 50%;
+    left: 38%;
+    transform: translate(-36%, -70%) rotate(45deg);
+}
+
+.down-btn3-2 span:nth-child(2) {
+    top: 50%;
+    right: 38%;
+    transform: translate(36%, -70%) rotate(-45deg);
+}
+
+.down-btn3-2.on {
+    transform: rotate(180deg);
+}
+
+/*  */
+
+.menu-hover-shop-etc- {
+    font-size: 16px;
+}
+
+.menu-hover-more {
+    font-size: 30px;
+}
+
+.menu-hover-more-title {
+    cursor: pointer;
+    position: relative;
+}
+
+/*  */
+
+.menu-hover-more-reservation {
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+.menu-hover-more-reservation-title {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-hover-more-reservation-title-menu {
+    font-family: '116watermelon';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-hover-more-community {
+    line-height: 25px;
+}
+
+.menu-hover-more-community-title {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-hover-more-community-menu {
+    font-family: '116watermelon';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*  */
+.menu-hover-more-reservation,
+.menu-hover-more-community {
+    display: none;
+}
+
+.menu-hover-more-reservation-title-menu,
+.menu-hover-more-community-menu {
+    display: none;
+}
+
+/*  */
+.menu-hover-info-title {
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-hover-info-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-hover-info-menu- {
+    font-family: 'tanker';
+    font-size: 20px;
+}
+
+.menu-hover-info-menu-kr {
+    font-family: '116watermelon';
+    font-size: 20px;
+}
+
+.menu-hover-info-menu-,
+.menu-hover-info-menu {
+    line-height: 25px;
+}
+
+@media all and (max-width:550px) {
+    .menu-hover {
+        position: fixed;
+        width: 220px;
+        height: 100vh;
+        background: #ede6d4;
+        top: 0;
+        left: -336px;
+        font-family: 'tanker';
+        color: #3d0202;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        transition: 0.5s;
+    }
+
+    .menu-hover-title {
+        font-size: 30px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .menu-hover-pointbooks-title {
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .down-btn1 {
+        right: 33px;
+        top: 137px;
+    }
+
+    .menu-hover-pointbooks-menu p {
+
+    }
+}
